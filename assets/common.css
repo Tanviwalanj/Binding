@@ -37,6 +37,9 @@
       padding: 14px 16px;
       text-decoration: none;
     }
+    a.navigation:link {color:#ff0000;}
+
+    a.navigation:hover {background:#66ff66;}
 
 
     body {
