@@ -3,31 +3,66 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Graphic Design Essentails</title>
+    <title>Graphic Design Essentials</title>
     <link rel="stylesheet" href="assets/common.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter&display=swap" rel="stylesheet">
 </head>
 
 <body>
 
-    <div class="heading"> Graphic Design Essentails</div>
-    
-    <ul>
-        <li><a class= "navigation" href="#home">Home</a></li>
-        <li><a class= "navigation" href="color/index.html">Color</a></li>
-        <li><a class= "navigation" href="type">Type</a></li>
-        <li><a class= "navigation" href="#shape">Shape</a></li>
-      </ul>
+<div class="heading large"> Graphic <br> Design <br> Essentials</div>
 
-    <div class="body">We are here to take you through the fundamental elements of graphic design. Starting with an exciting journey through “Everyday Color Theory” where you will understand the history of color, how colors are perceived, experienced, how it evokes different sensibilities, how it blends in, stands out, and express itself through the medium of light. 
+<div class="topnav" id="myTopnav">
+    <a href="#home" class="active">Tanvi Walanj</a>
+    <a href="color/index.html">Color</a>
+    <a href="#contact">Type</a>
+    <a href="#about">Shape</a>
+    <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+      <i class="fa fa-bars"></i>
+    </a>
+</div>
+
+<script>
+    function myFunction() {
+      var x = document.getElementById("myTopnav");
+      if (x.className === "topnav") {
+        x.className += " responsive";
+      } else {
+        x.className = "topnav";
+      }
+    }
+</script>
+
+<div class="row noMargin">
+    <div class="one">
+      one
+    </div>
+    <div class="two">
+      two
+    </div>
+</div>
+<div class="row noMargin">
+    <div class="three">
+      three
+    </div>
+    <div class="four">
+      four
+    </div>
+</div>
+  
+
+    <div class="body small">We are here to take you through the fundamental elements of graphic design. Starting with an exciting journey through “Everyday Color Theory” where you will understand the history of color, how colors are perceived, experienced, how it evokes different sensibilities, how it blends in, stands out, and express itself through the medium of light. 
     </div>
 
-    <div class="body">Then, moving to typography, where you get exposed to “Thinking with Type” which covers three major sections- Letter, Type and Grid. Here you can go through examples of design practices, type crimes, do’s and don’ts of type. 
+    <div class="body small">Then, moving to typography, where you get exposed to “Thinking with Type” which covers three major sections- Letter, Type and Grid. Here you can go through examples of design practices, type crimes, do’s and don’ts of type. 
     </div>
 
     <div class="body">Color, typography, form and purpose are at the heart of how we perceive things, and as graphic designers we need to be mindful of how we use it to express our work. Happy reading!
     </div>
 
-    <div class="body">Graphic Design 101 was written and designed by Tanvi Walanj on 6th November, 2022. This website illustrates her personal favourite books/ articles on  the fundamentals of design. Her aim is to inspire graphic designers starting out. 
+    <div class="author">Graphic Design 101 was written and designed by Tanvi Walanj on 6th November, 2022. This website illustrates her personal favourite books/ articles on  the fundamentals of design. Her aim is to inspire graphic designers starting out. 
     </div>
 
 </body>
