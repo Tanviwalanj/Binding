@@ -350,15 +350,15 @@ span {
   }
 }
 
-
+/*icon*/
 .plus {
-  background: #333;
+  background: black;
   height: 50px;
   position: relative;
   width: 8px;
 }
 .plus:after {
-  background: #333;
+  background: white;
   content: "";
   height: 8px;
   left: -21px;
@@ -366,9 +366,6 @@ span {
   top: 21px;
   width: 50px;
 }
-
-
-
 
   
 
