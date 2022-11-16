@@ -25,7 +25,7 @@ html {
 /* Variables */
 
 :root {
-  --body: 16px;
+  --body: 14px;
   --nav: calc(var(--body)*1)
   --heading: calc(var(--body)*2.11);
   --author: calc(var(--body));
@@ -35,7 +35,7 @@ html {
 
 @media (min-width: 768px) {
   :root {
-  --body: 18px;
+  --body: 17px;
   --nav: calc(var(--body)*1.5);
   --heading: calc(var(--body)*4);
   --author: calc(var(--body)*1);
@@ -44,35 +44,35 @@ html {
   --largespacing: 150px;}}
 
 
-  /*
-    @media print{
-      .heading1 {page-break-before: auto;}
-      .heading2 {page-break-before: auto;}
-      .title {page-break-before: auto;}
-      .body {page-break-before: auto;}
-      .author {page-break-before: auto;}
-      .line {page-break-before: auto;}
+/*
+  @media print{
+    .heading1 {page-break-before: auto;}
+    .heading2 {page-break-before: auto;}
+    .title {page-break-before: auto;}
+    .body {page-break-before: auto;}
+    .author {page-break-before: auto;}
+    .line {page-break-before: auto;}
     
-      @page{
-        margin-top: 1cm;
-        margin-bottom: 1cm;  
-        }
+  @page{
+    margin-top: 1cm;
+    margin-bottom: 1cm;  
+    }
       
     
-      :root {
-        --body: 12pt;
-        --heading: calc(var(--body)*2);
-        --heading2: calc(var(--body)*1.2);
-        --title: calc(var(--body)*3.4);
-        --author: calc(var(--body));
-        --header: calc(var(--body)*1.2);
-        --excerpt: 12pt;
-        --smallspacing: 0.2cm;
-        --mediumspacing: 0.7cm;
-        --largespacing: 1cm;
-        --xlspacing: 1.2cm;
-        --sectionbreak: 1.6cm;
-        --headingcolor: #FF7870;
+    :root {
+    --body: 12pt;
+    --heading: calc(var(--body)*2);
+    --heading2: calc(var(--body)*1.2);
+    --title: calc(var(--body)*3.4);
+    --author: calc(var(--body));
+    --header: calc(var(--body)*1.2);
+    --excerpt: 12pt;
+    --smallspacing: 0.2cm;
+    --mediumspacing: 0.7cm;
+    --largespacing: 1cm;
+    --xlspacing: 1.2cm;
+    --sectionbreak: 1.6cm;
+    --headingcolor: #FF7870;
     }} /*
     
     
@@ -186,62 +186,12 @@ html {
     margin-top: var(--largespacing);
   }
 
-
-
   body {
     background-color: black;
   }
 
 
-  /* 4 boxes */
-.row {
-  display: flex;
-  width: 100%;
-}
-  
-.row div {
-  width: 50%;
-}
-  
-.noMargin {
-  margin: 0px;
-}
-
-/* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
-@media screen and (max-width: 600px) {
-  .row {
-    width: 100%;
-  }
-}
-
-  
-.one {
-  background-color: #3477DD;
-  height:400px;
-  width:400px;
-  margin:0;
-}
-  
-.two {
-  background-color: #EAEB91;
-  height:400px;
-  width:400px;
-  margin:0;
-}
-  
-.three {
-  background-color:#B7501B;
-  height:400px;
-  width:400px;
-  margin:0;
-}
-  
-.four {
-  background-color: #F8FAFD;
-  height:400px;
-  width:400px;
-  margin:0;
-}
+/*author*/
 
 .page {
   display: flex;
@@ -328,6 +278,93 @@ span {
     padding: 10px 0;
     display: inline-block;
   }
+}
+
+/*flexbox*/
+
+* {
+  box-sizing: border-box;
+}
+
+.flex-container {
+  display: flex;
+  flex-wrap: wrap;
+  font-size: var(--body);
+  text-align: left;
+}
+
+.flex-item-left-1 {
+  background-color: #3477DD;
+  padding-top: 11%;
+  padding-left: 5%;
+  padding-right: 5%;
+  flex: 50%;
+  height:400px;
+  margin:0;
+  font-family: ClashDisplay-Medium;
+  font-style: normal;
+  font-size: var(--heading);
+  line-height: 1;
+  color: #FFF7F5;
+}
+
+.flex-item-right-1 {
+  background-color: #EAEB91;
+  padding-top: 18%;
+  padding-left: 5%;
+  padding-right: 5%;
+  flex: 50%;
+  height:400px;
+  margin:0;
+}
+
+@keyframes typing {
+  from { width: 0 }
+  to { width: 100% }
+}
+
+.flex-item-left-2 {
+  background-color:#B7501B;
+  padding-top: 18%;
+  padding-left: 5%;
+  padding-right: 5%;
+  flex: 50%;
+  height:400px;
+  margin:0;
+}
+
+.flex-item-right-2 {
+  background-color: #F8FAFD;
+  padding-top: 18%;
+  padding-left: 5%;
+  padding-right: 5%;
+  flex: 50%;
+  height:400px;
+  margin:0;
+}
+
+/* Responsive layout - makes a one column-layout instead of a two-column layout */
+@media (max-width: 800px) {
+  .flex-item-right-1, .flex-item-1, .flex-item-right-2, .flex-item-2 {
+    flex: 100%;
+  }
+}
+
+
+.plus {
+  background: #333;
+  height: 50px;
+  position: relative;
+  width: 8px;
+}
+.plus:after {
+  background: #333;
+  content: "";
+  height: 8px;
+  left: -21px;
+  position: absolute;
+  top: 21px;
+  width: 50px;
 }
 
 
