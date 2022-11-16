@@ -24,6 +24,7 @@
 
 :root {
   --body: 16px;
+  --nav: calc(var(--body)*1)
   --heading: calc(var(--body)*2.11);
   --author: calc(var(--body));
   --smallspacing: 18px;
@@ -33,6 +34,7 @@
 @media (min-width: 768px) {
   :root {
   --body: 18px;
+  --nav: calc(var(--body)*1.5);
   --heading: calc(var(--body)*4);
   --author: calc(var(--body)*1);
   --smallspacing: 32px;
@@ -291,7 +293,7 @@ nav {
   margin: 0 auto;
   text-align: center;
   position: absolute;
-  top: 50%;
+  top: 8%;
 }
 
 .hover-this {
@@ -303,7 +305,7 @@ span {
   font-family: 'Russo One', sans-serif;
   font-weight: 400;
   color: #fff;
-  font-size: 36px;
+  font-size: var(--nav);
   pointer-events: none;
   transition: transform 0.1s linear;
 }
@@ -331,12 +333,12 @@ span {
 
 @media(max-width: 900px) {
   nav {
-    top: 30%;
+    top: 10%;
   }
   
   .hover-this {
     width: 100%;
-    padding: 20px 0;
+    padding: 10px 0;
     display: inline-block;
   }
 }
