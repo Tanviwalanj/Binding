@@ -32,7 +32,7 @@
 
 @media (min-width: 768px) {
   :root {
-  --body: 17px;
+  --body: 20px;
   --heading: calc(var(--body)*4);
   --author: calc(var(--body)*1);
   --smallspacing: 32px;
@@ -254,24 +254,24 @@
   align-items: center;
 }
 
-.menu {
-  background-color: #5995DA;
-  height: 80px;
-}
-
-.header {
-  background-color: #B2D6FF;
-}
-
-.content {
-  background-color: #EAEDF0;
-  height: 600px;
-}
-
-.sign-up {
+.feature-1 {
   background-color: #D6E9FE;
+  padding: 50px;
+  margin: 0px;
 }
 
+.feature-2 {
+  background-color: #F5CF8E;
+  padding: 50px;
+  margin: 0px;
+}
+
+.feature-3 {
+  background-color: #F09A9D;
+  padding: 50px;
+  margin: 0px;
+  position:relative;
+}
 
 
 
