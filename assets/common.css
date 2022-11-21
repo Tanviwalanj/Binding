@@ -436,13 +436,6 @@ body {
 	z-index: 2;
 }
 
-.text--sub {
-	font-size: 12px;
-	letter-spacing: 0.5rem;
-	text-transform: uppercase;
-	margin-bottom: 40px;
-}
-
 .text--big {
 	font-weight: 500;
 	line-height: 110px;
@@ -455,7 +448,7 @@ body {
 }
 
 .text--normal {
-	font-size: 13px;
+	font-size: 14px;
 	color: rgba(255, 255, 255, 0.8);
 	line-height: 22px;
 	margin-top: 25px;
@@ -522,7 +515,7 @@ body {
 	background: #d3eaef;
 }
 
-/* Pikachu */
+/* Graphic design essentials */
 
 .flex--pikachu .flex__item--left {
 	background-color: #3477DD;
@@ -532,7 +525,7 @@ body {
 	background: #f4ecc5;
 }
 
-/* Blaziken */
+/* Color */
 
 .flex--blaziken .flex__item--left {
 	background: #f64f37;
@@ -542,7 +535,7 @@ body {
 	background: #ffebcd;
 }
 
-/* Dialga */
+/* Type */
 
 .flex--dialga .flex__item--left {
 	background: #476089;
@@ -552,7 +545,7 @@ body {
 	background: #ade8f7;
 }
 
-/* Zekrom */
+/* Shape */
 
 .flex--zekrom .flex__item--left {
 	background: #424242;
