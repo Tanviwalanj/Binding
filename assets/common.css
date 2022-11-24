@@ -435,54 +435,45 @@ body {
 	opacity: 1;
 }
 
-/* Piplup */
-
-.flex--piplup .flex__item--left {
-	background: #3e9fe6;
-}
-
-.flex--piplup .flex__item--right {
-	background: #0f346c;
-}
-
 /* Graphic design essentials */
 
-.flex--pikachu .flex__item--left {
-	background-color: #3477DD;
+.flex--pi .flex__item--left {
+	background-color: #414344;
 }
 
-.flex--pikachu .flex__item--right {
-	background: #3477DD;
+.flex--pi .flex__item--right {
+	background: #414344;
 }
+
 
 /* Color */
 
-.flex--blaziken .flex__item--left {
-  background: #77610a;
+.flex--color .flex__item--left {
+	background: #034DC5;
 }
 
-.flex--blaziken .flex__item--right {
-	background: #776242;
+.flex--color .flex__item--right {
+	background: #b7d1f7;
 }
 
 /* Type */
 
-.flex--dialga .flex__item--left {
-	background: #476089;
+.flex--type .flex__item--left {
+  background: #C13721;
 }
 
-.flex--dialga .flex__item--right {
-	background: #ade8f7;
+.flex--type .flex__item--right {
+	background: #EAEB91;
 }
 
 /* Shape */
 
 .flex--shape .flex__item--left {
-	background: #424242;
+	background: #BE7852;
 }
 
 .flex--shape .flex__item--right {
-	background: #a7bcbb;
+	background: #c89a82;
 }
 
 .flex__content {
@@ -496,8 +487,10 @@ body {
 .pokemon__img {
 	position: absolute;
 	bottom: 20px;
-	right: 15%;
+	left: 50%;
+  width: 50%;
 	max-height: 40vw;
+  height: 100%;
 	opacity: 1;
 	transform: translate3d(0,0,0);
 	transition: opacity 0.43s 0.6s, transform 0.4s 0.65s cubic-bezier(0, 0.88, 0.4, 0.93);
@@ -537,7 +530,7 @@ body {
 
 /* Responsive layout - makes a one column-layout instead of a two-column layout */
 @media (max-width: 800px) {
-  .flex--pikachu .flex__item--left, .flex-item-1, .flex--pikachu .flex__item--right, .flex--blaziken .flex__item--right {
+  .flex--pi .flex__item--left, .flex--pi .flex__item--right,.flex--color .flex__item--left, .flex--color .flex__item--right, .flex--type .flex__item--left, .flex--type .flex__item--right, .flex--shape .flex__item--left, .flex--shape .flex__item--right{
     flex: 100%;
   }
 }
