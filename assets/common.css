@@ -442,7 +442,7 @@ body {
 }
 
 .flex--piplup .flex__item--right {
-	background: #d3eaef;
+	background: #0f346c;
 }
 
 /* Graphic design essentials */
@@ -452,7 +452,7 @@ body {
 }
 
 .flex--pikachu .flex__item--right {
-	background: #f4ecc5;
+	background: #3477DD;
 }
 
 /* Color */
@@ -462,7 +462,7 @@ body {
 }
 
 .flex--blaziken .flex__item--right {
-	background: #ffebcd;
+	background: #776242;
 }
 
 /* Type */
@@ -477,11 +477,11 @@ body {
 
 /* Shape */
 
-.flex--zekrom .flex__item--left {
+.flex--shape .flex__item--left {
 	background: #424242;
 }
 
-.flex--zekrom .flex__item--right {
+.flex--shape .flex__item--right {
 	background: #a7bcbb;
 }
 
