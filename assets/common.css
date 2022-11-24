@@ -318,13 +318,13 @@ span {
 
 .slider__navi a {
 	display: block;
-	height: 6px;
-	width: 20px;
+	height: 10px;
+	width: 30px;
 	margin: 20px 0;
 	text-indent: -9999px;
 	box-shadow: none;
 	border: none;
-	background: rgba(0,0,0,0.2);
+	background: rgba(113, 113, 113, 0.2);
 }
 
 .slider__navi a.active {
@@ -410,7 +410,7 @@ body {
 	-moz-align-items: center;
 	-ms-align-items: center;
 	width: 50%;
-  height:80%;
+  height:70%;
 	transform-origin: left bottom;
 	transition: transform 0.1s linear 0.4s;
 	opacity: 0;
@@ -421,7 +421,7 @@ body {
 
 .flex__item--right {
 	width: 50%;
-  height:80%;
+  height:70%;
 	transform-origin: right center;
 	transition: transform 0.1s linear 0s;
 	opacity: 0;
@@ -438,11 +438,11 @@ body {
 /* Graphic design essentials */
 
 .flex--pi .flex__item--left {
-	background-color: #414344;
+	background-color: #000000;
 }
 
 .flex--pi .flex__item--right {
-	background: #414344;
+	background: #000000;
 }
 
 
@@ -495,6 +495,11 @@ body {
 	transform: translate3d(0,0,0);
 	transition: opacity 0.43s 0.6s, transform 0.4s 0.65s cubic-bezier(0, 0.88, 0.4, 0.93);
 }
+.img {
+    width:100%;
+    height:100%;
+    object-fit:cover;
+}
 
 /* Animate-START point */
 
@@ -530,7 +535,7 @@ body {
 
 /* Responsive layout - makes a one column-layout instead of a two-column layout */
 @media (max-width: 800px) {
-  .flex--pi .flex__item--left, .flex--pi .flex__item--right,.flex--color .flex__item--left, .flex--color .flex__item--right, .flex--type .flex__item--left, .flex--type .flex__item--right, .flex--shape .flex__item--left, .flex--shape .flex__item--right{
+  .flex--pi .flex__item--left, .flex--pi .flex__item--right,.flex--color .flex__item--left, .flex--color .flex__item--right, .flex--type .flex__item--left, .flex--type .flex__item--right, .flex--shape .flex__item--left, .flex--shape .flex__item--right, .pokemon__img{
     flex: 100%;
   }
 }
