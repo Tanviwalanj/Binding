@@ -449,8 +449,16 @@ body {
 
 @media (max-width: 800px) {
   .pokemon__img{
-    bottom: -56%;
+    bottom: -46%;
     width: 100%;
+    margin: 0%;
+    left: 0%;  
+  }
+}
+
+@media (max-width: 800px) {
+  .flex--pi .flex__item--right, .flex--color .flex__item--right, .flex--type .flex__item--right, .flex--shape .flex__item--right{
+    bottom: -46%;
     margin: 0%;
     left: 0%;  
   }
