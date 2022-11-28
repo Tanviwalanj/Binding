@@ -5,20 +5,31 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Graphic Design Essentials</title>
     <link rel="stylesheet" href="assets/common.css" />
+    <link href="https://api.fontshare.com/v2/css?f[]=clash-display@200,400,700,500,600,1,300&display=swap" rel="stylesheet">
 </head>
 
 <body>
 
 <!--- Cursor hover -->
-
-<div class="nav-wrapper">
-  <nav>
-    <a href="color/index.html"class="hover-this"><span>Color</span></a>
-    <a href="#" class="hover-this"><span>Type</span></a>
-    <a href="#" class="hover-this"><span>Shape</span></a>
-    <div class="cursor"></div>
-  </nav>
+<div class="topnav" id="myTopnav">
+  <a href="https://www.tanviwalanj.com/">Color</a>
+  <a href="color/index.html">Type</a>
+  <a href="#about">Shape</a>
+  <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+    <i class="fa fa-bars"></i>
+  </a>
 </div>
+
+<script>
+  function myFunction() {
+    var x = document.getElementById("myTopnav");
+    if (x.className === "topnav") {
+      x.className += " responsive";
+    } else {
+      x.className = "topnav";
+    }
+  }
+</script>
 
   <div class="slider__warpper">
     <div class="flex__container flex--pi flex--active" data-slide="1">
@@ -51,7 +62,7 @@
         <p class="text__background"></p>
       </div>
       <div class="flex__item flex__item--right"></div>
-      <img class="pokemon__img" src="Type.jpg" />
+      <img class="pokemon__img image-contain" src="Type.jpg" />
     </div>
     <div class="flex__container flex--shape animate--start" data-slide="4">
       <div class="flex__item flex__item--left">
@@ -106,6 +117,7 @@
         window.addEventListener('mousemove', editCursor);
       })();
       </script>
+
 
 </body>
 </html>
