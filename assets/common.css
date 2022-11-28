@@ -59,7 +59,6 @@ html {
 /* Nav bar*/
 .topnav {
   overflow: hidden;
-  background-color: #333;
 }
 
 .topnav a {
@@ -73,12 +72,10 @@ html {
 }
 
 .topnav a:hover {
-  background-color: #ddd;
   color: black;
 }
 
 .topnav a.active {
-  background-color: #04AA6D;
   color: white;
 }
 
@@ -272,7 +269,7 @@ body {
 .text--big {
 	font-weight: 500;
 	line-height: 110px;
-  margin-left: -8px;
+  margin-left: -1px;
   font-family: ClashDisplay-Medium;
   font-style: normal;
   font-size: var(--heading);
@@ -379,7 +376,7 @@ body {
 }
 
 .flex--shape .flex__item--right {
-	background: #BE7852;
+	background: #ffffff;
 }
 
 .flex__content {
@@ -395,10 +392,10 @@ body {
 	position: absolute;
   object-fit: cover;
 	bottom: 20px;
-  margin-bottom: 20%;
+  margin-bottom: 2.9%;
 	left: 50%;
   width: 50%;
-	max-height: 20%;
+	max-height: 70%;
   height: 100%;
 	opacity: 1;
 	transform: translate3d(0,0,0);
