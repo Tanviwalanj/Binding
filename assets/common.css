@@ -5,9 +5,9 @@ html {
 /* Variables */
 
 :root {
-  --body: 18px;
+  --body: 14px;
   --nav: calc(var(--body)*1)
-  --heading: calc(var(--body)*2.11);
+  --heading: calc(var(--body)*3);
   --author: calc(var(--body));
   --smallspacing: 18px;
   --mediumspacing: 32px;
@@ -54,23 +54,12 @@ html {
     --sectionbreak: 1.6cm;
     --headingcolor: #FF7870;
     }} /*
-    
-    
-/* Nav bar*/
+
 
 /* Nav bar*/
-  
-a.navigation:link {color:#767575;
-}
-
-body {
-  margin: 0;
-  font-family: 'Inter', sans-serif;
-}
-
 .topnav {
   overflow: hidden;
-  background-color: black;
+  background-color: #333;
 }
 
 .topnav a {
@@ -84,17 +73,17 @@ body {
 }
 
 .topnav a:hover {
-  background-color: black;
-  color: red;
+  background-color: #ddd;
+  color: black;
 }
 
 .topnav a.active {
-  color: red;
+  background-color: #04AA6D;
+  color: white;
 }
 
 .topnav .icon {
   display: none;
-  color: white;
 }
 
 @media screen and (max-width: 600px) {
@@ -118,8 +107,8 @@ body {
     text-align: left;
   }
 }
-  
 
+/* Type*/
 
 .heading { font-family: ClashDisplay-Medium;
   font-style: normal;

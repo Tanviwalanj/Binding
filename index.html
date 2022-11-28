@@ -10,33 +10,22 @@
 
 <body>
 
-<!--- Cursor hover -->
-<div class="topnav" id="myTopnav">
-  <a href="https://www.tanviwalanj.com/">Color</a>
-  <a href="color/index.html">Type</a>
-  <a href="#about">Shape</a>
-  <a href="javascript:void(0);" class="icon" onclick="myFunction()">
-    <i class="fa fa-bars"></i>
-  </a>
-</div>
-
-<script>
-  function myFunction() {
-    var x = document.getElementById("myTopnav");
-    if (x.className === "topnav") {
-      x.className += " responsive";
-    } else {
-      x.className = "topnav";
-    }
-  }
-</script>
+  <div class="topnav" id="myTopnav">
+    <a href="#home" class="active">Home</a>
+    <a href="https://www.w3schools.com/howto/howto_js_topnav_responsive.asp">News</a>
+    <a href="#contact">Contact</a>
+    <a href="#about">About</a>
+    <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+      <i class="fa fa-bars"></i>
+    </a>
+  </div>
 
   <div class="slider__warpper">
     <div class="flex__container flex--pi flex--active" data-slide="1">
       <div class="flex__item flex__item--left">
         <div class="flex__content">
           <h1 class="text--big">Graphic <br> Design <br> Essentials</h1>
-          <p class="text--normal">Graphic Design 101 was written and designed by Tanvi Walanj on 6th November, 2022. This website illustrates her personal favourite books/ articles on  the fundamentals of design. Her aim is to inspire graphic designers starting out. </p>
+          <p class="text--normal">Graphic Design Essentials was written and designed by Tanvi Walanj on 6th November, 2022. This website illustrates her personal favourite books/ articles on  the fundamentals of design. Her aim is to inspire graphic designers starting out. </p>
         </div>
         <p class="text__background"></p>
       </div>
