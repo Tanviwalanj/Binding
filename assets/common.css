@@ -369,7 +369,7 @@ body {
 }
 
 .flex--type .flex__item--right {
-	background: #C13721;
+	background: #a7655b;
 }
 
 /* Shape */
@@ -388,14 +388,17 @@ body {
 	opacity: 1;
 	transform: translate3d(0,0,0);
 	transition: transform 0.2s linear 0.2s, opacity 0.1s linear 0.2s;
+  overflow: hidden;
 }
 
 .pokemon__img {
 	position: absolute;
+  object-fit: cover;
 	bottom: 20px;
+  margin-bottom: 20%;
 	left: 50%;
   width: 50%;
-	max-height: 40vw;
+	max-height: 20%;
   height: 100%;
 	opacity: 1;
 	transform: translate3d(0,0,0);

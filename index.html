@@ -9,20 +9,16 @@
 
 <body>
 
-  <nav class="topnav" id="myTopnav">
-    <a href="#home" class="active">Home</a>
-    <a href="https://www.w3schools.com/howto/howto_js_topnav_responsive.asp">News</a>
-    <a href="#contact">Contact</a>
-    <a href="#about">About</a>
-    <a href="javascript:void(0);" class="icon" onclick="myFunction()">
-      <i class="fa fa-bars"></i>
-    </a>
-  </nav>
-
   <div class="slider__warpper">
     <div class="flex__container flex--pi flex--active" data-slide="1">
       <div class="flex__item flex__item--left">
         <div class="flex__content">
+          <nav class="topnav" id="myTopnav">
+            <a href="#home" class="active">Home</a>
+            <a href="https://www.w3schools.com/howto/howto_js_topnav_responsive.asp">News</a>
+            <a href="#contact">Contact</a>
+            <a href="#about">About</a>
+          </nav>
           <h1 class="text--big">Graphic <br> Design <br> Essentials</h1>
           <p class="text--normal">Graphic Design Essentials was written and designed by Tanvi Walanj on 6th November, 2022. This website illustrates her personal favourite books/ articles on  the fundamentals of design. Her aim is to inspire graphic designers starting out. </p>
         </div>
@@ -34,7 +30,7 @@
       <div class="flex__item flex__item--left">
         <div class="flex__content">
           <h1 class="text--big">Color</h1>
-          <p class="text--normal">We are here to take you through the fundamental elements of graphic design. Starting with an exciting journey through “Everyday Color Theory” where you will understand the history of color, how colors are perceived, experienced, how it evokes different sensibilities, how it blends in, stands out, and express itself through the medium of light.</p>
+          <p class="text--normal">We are here to take you through the fundamental elements of graphic design. Starting with an exciting journey through “Everyday Color Theory”  <a href="https://www.w3schools.com/howto/howto_js_topnav_responsive.asp">News</a>where you will understand the history of color, how colors are perceived, experienced, how it evokes different sensibilities, how it blends in, stands out, and express itself through the medium of light.</p>
         </div>
         <p class="text__background"></p>
       </div>
@@ -73,38 +69,7 @@
   <script src='https://code.jquery.com/jquery-2.2.4.min.js'></script>
 
     <script src="js/index.js"></script>
-    
-    <script>
-      (function () {
-      
-        const link = document.querySelectorAll('nav > .hover-this');
-        const cursor = document.querySelector('.cursor');
-      
-        const animateit = function (e) {
-              const span = this.querySelector('span');
-              const { offsetX: x, offsetY: y } = e,
-              { offsetWidth: width, offsetHeight: height } = this,
-      
-              move = 25,
-              xMove = x / width * (move * 2) - move,
-              yMove = y / height * (move * 2) - move;
-      
-              span.style.transform = `translate(${xMove}px, ${yMove}px)`;
-      
-              if (e.type === 'mouseleave') span.style.transform = '';
-        };
-      
-        const editCursor = e => {
-              const { clientX: x, clientY: y } = e;
-              cursor.style.left = x + 'px';
-              cursor.style.top = y + 'px';
-        };
-      
-        link.forEach(b => b.addEventListener('mousemove', animateit));
-        link.forEach(b => b.addEventListener('mouseleave', animateit));
-        window.addEventListener('mousemove', editCursor);
-      })();
-      </script>
+
 
 
 </body>
