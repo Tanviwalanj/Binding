@@ -5,7 +5,7 @@ html {
 /* Variables */
 
 :root {
-  --body: 14px;
+  --body: 18px;
   --nav: calc(var(--body)*1)
   --heading: calc(var(--body)*2.11);
   --author: calc(var(--body));
