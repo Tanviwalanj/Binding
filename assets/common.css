@@ -442,8 +442,17 @@ body {
 
 /* Responsive layout - makes a one column-layout instead of a two-column layout */
 @media (max-width: 800px) {
-  .flex--pi .flex__item--left, .flex--pi .flex__item--right,.flex--color .flex__item--left, .flex--color .flex__item--right, .flex--type .flex__item--left, .flex--type .flex__item--right, .flex--shape .flex__item--left, .flex--shape .flex__item--right, .pokemon__img{
+  .flex--pi .flex__item--left, .flex--pi .flex__item--right,.flex--color .flex__item--left, .flex--color .flex__item--right, .flex--type .flex__item--left, .flex--type .flex__item--right, .flex--shape .flex__item--left, .flex--shape .flex__item--right{
     flex: 100%;
+  }
+}
+
+@media (max-width: 800px) {
+  .pokemon__img{
+    bottom: -56%;
+    width: 100%;
+    margin: 0%;
+    
   }
 }
 
