@@ -30,13 +30,20 @@
   font-style: normal;
   margin: -7px;
   position: relative;
-  height: 470px;
+  height: 540px;
   font-size: var(--heading);
   margin-bottom: 120px;
-  line-height: auto;
+  line-height: 1.3;
   margin-left: 7%;
   color: #FFF7F5;
   }
+
+.heading .title { 
+  position: absolute;
+  bottom:14%;
+  left: 6%;
+  margin: 0px;
+  line-height: 0.9;}
 
   h1{
   font-family: ClashDisplay-Semibold;
@@ -100,6 +107,30 @@ p1 {
   margin: 120px 0px;
   display: block;
  }
+
+/* Responsive layout - title */
+@media (max-width: 800px) {
+  .heading .title{
+    top: 28%;
+    width: 100%;
+  }
+}
+
+/* Responsive layout - side header 1 */
+@media (max-width: 800px) {
+  .heading p{
+    top: 63%;
+    left: 8%;
+    font-size: 11px;
+  }
+}
+
+/* Responsive layout - side header 2 */
+@media (max-width: 800px) {
+  .head {
+    font-size: 11px;
+  }
+}
 
 
 
