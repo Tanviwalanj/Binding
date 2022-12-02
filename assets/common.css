@@ -182,7 +182,7 @@ html {
 	text-indent: -9999px;
 	box-shadow: none;
 	border: none;
-	background: rgba(113, 113, 113, 0.2);
+	background: rgba(169, 169, 169, 0.2);
 }
 
 .slider__navi a.active {
@@ -299,11 +299,11 @@ body {
 /* Graphic design essentials */
 
 .flex--pi .flex__item--left {
-	background-color: #000000;
+	background-color:#5d5d5d;
 }
 
 .flex--pi .flex__item--right {
-	background: #000000;
+	background: #5d5d5d;
 }
 
 
