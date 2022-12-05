@@ -132,6 +132,48 @@ p1 {
   }
 }
 
+/* Responsive layout - print */
+@media print{
+  .topnav{
+    display: none;
+}
+
+.body, .heading , .title, .h1{
+  width:100%!important;
+  padding:0!important;
+  margin:0!important;
+  color: #090909!important;
+
+}
+
+#head{
+  margin-top: 0%;
+}
+
+body{
+  color: #090909!important;
+  font-weight: 400;
+
+}
+
+p1{
+  width:100%!important;
+  padding:0!important;
+  margin:0!important;
+  color: #090909!important;
+  font-size: larger;
+}
+
+.text--big {page-break-before: auto;}
+.text--normal {page-break-before: auto;}
+
+  
+  :root {
+  --body: 12pt;
+  --heading: calc(var(--body)*2);
+  }}
+
+
 
 
 

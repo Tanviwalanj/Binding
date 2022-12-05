@@ -24,36 +24,28 @@ html {
   --largespacing: 150px;}}
 
 
-/*
-  @media print{
-    .heading1 {page-break-before: auto;}
-    .heading2 {page-break-before: auto;}
-    .title {page-break-before: auto;}
-    .body {page-break-before: auto;}
-    .author {page-break-before: auto;}
-    .line {page-break-before: auto;}
-    
-  @page{
-    margin-top: 1cm;
-    margin-bottom: 1cm;  
-    }
-      
+
+@media print{
+    .topnav{
+      display: none;
+  }
+
+  .text--big, .text--normal{
+    width:100%!important;
+    padding:0!important;
+    margin:0!important;
+    color: #090909!important;
+
+  }
+
+  .text--big {page-break-before: auto;}
+  .text--normal {page-break-before: auto;}
+
     
     :root {
     --body: 12pt;
     --heading: calc(var(--body)*2);
-    --heading2: calc(var(--body)*1.2);
-    --title: calc(var(--body)*3.4);
-    --author: calc(var(--body));
-    --header: calc(var(--body)*1.2);
-    --excerpt: 12pt;
-    --smallspacing: 0.2cm;
-    --mediumspacing: 0.7cm;
-    --largespacing: 1cm;
-    --xlspacing: 1.2cm;
-    --sectionbreak: 1.6cm;
-    --headingcolor: #FF7870;
-    }} /*
+    }}
 
 
 /* Nav bar*/
